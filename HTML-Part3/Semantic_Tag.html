@@ -1,0 +1,123 @@
+<!-- 
+Semantic tags in HTML are tags that clearly describe the meaning of 
+the content inside them.
+They tell the browser and developer what the content is, not just how it looks.
+
+Common Semantic Tags -
+<header> → top section of a page (logo, title)
+<nav> → navigation menu (links)
+<main> → main content of the page
+<section> → a section of related content
+<article> → independent content (blog/news post)
+<aside> → side content (ads, links, notes)
+<footer> → bottom section (copyright, contact)
+
+Simple layout example -
+<header>
+  My Website
+</header>
+
+<nav>
+  Home | About | Contact
+</nav>
+
+<main>
+  <article>
+    This is a blog post.
+  </article>
+</main>
+
+<footer>
+  © 2026 My Website
+</footer>
+
+Why semantic tags are important -
+Makes HTML easy to read
+Helps Google understand your page (SEO)
+Improves accessibility (screen readers)
+Better structure than only <div> 
+    
+<nav> tag in HTML -
+The <nav> tag is used to define a navigation section of a webpage.
+It contains links that help users move around the website.
+
+Key points -
+Used for menus / navigation links
+Usually placed in header or sidebar
+Helps users and search engines understand site structure
+
+<article> = Independent content
+A complete piece of content that can stand alone.
+
+Example -
+Blog post
+News post
+YouTube post description
+
+<article>
+  <h2>AI is Growing</h2>
+  <p>This article talks about AI technology.</p>
+</article>
+
+<section> = Group of related content
+A part of a page that has a theme.
+
+Example -
+Education section
+Skills section
+About section
+
+<section>
+  <h2>Skills</h2>
+  <p>HTML, CSS, JavaScript</p>
+</section>
+
+<aside> = Side content
+Extra information not main content.
+
+Example -
+Ads
+Tips
+Related links
+
+<aside>
+  <p>Tip: Practice HTML daily</p>
+</aside>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Tags</title>
+</head>
+<body>
+<header>My Website
+  <nav>
+    <ul>
+      <li><a href="/about.html">About us</a></li>
+      <li><a href="/contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+    <section>
+        <h1>Welcome</h1>
+        <p>This is the main section of the page.</p>
+    </section>
+
+    <article>
+        <h2>HTML Learning</h2>
+        <p>This article explains semantic tags in HTML.</p>
+    </article>
+
+    <aside>
+        <h3>Tip</h3>
+        <p>Practice HTML daily to improve fast.</p>
+    </aside>
+</main>
+
+<footer>Made with &hearts;</footer>
+</body>
+</html>
