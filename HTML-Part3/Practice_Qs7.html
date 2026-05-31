@@ -1,0 +1,65 @@
+<!-- 
+Q1. Search on the internet and learn to use the video tag in HTML.(Similar to the img tag) 
+The <video> tag in HTML is used to add videos to a webpage.
+
+Basic Syntax -
+<video src="movie.mp4" controls></video>
+
+Explanation
+<video> → Video element
+src → Video file path
+controls → Shows play, pause, volume buttons
+
+Example -
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Tag</title>
+</head>
+<body>
+    <h1>My Video</h1>
+    <video src="sample.mp4" controls width="400">
+    </video>
+</body>
+</html>
+
+Important Attributes
+Attribute	Meaning
+controls	Shows video controls
+width	    Sets video width
+height	    Sets video height
+autoplay	Video starts automatically
+loop	    Repeats the video
+muted	    Starts video without sound
+
+Example with Multiple Attributes
+<video src="sample.mp4"
+       controls
+       width="500"
+       autoplay
+       muted
+       loop>
+</video>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Video Tag</title>
+</head>
+<body>
+    <h1>Video Example</h1>
+    <video controls autoplay loop width="500">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <br><br>
+
+    <video controls autoplay loop width="500">
+        <source src="video1.mp4" type="video/mp4">
+    </video>
+
+</body>
+</html>
+
