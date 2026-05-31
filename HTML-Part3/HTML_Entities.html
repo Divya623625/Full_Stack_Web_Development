@@ -1,0 +1,56 @@
+<!-- 
+HTML Entities
+=> HTML entities are special codes used to display - special symbols, reserved characters, emojis
+=> An Html entity is a piece of text("string") that begins with an ampersand (&) and ends with a semicolon (;).
+=> Used to display reserved characters(which would otherwise be interpreted as HTML code), and 
+invisible characters(like non-breaking spaces).
+=> Can also use in place of characters that are difficult to type with a standard keyboard.
+=> Browser interprets them & renders correct character.
+
+Why we use them?
+Some symbols are already used by HTML.
+
+Example -
+<p>5 < 10</p>
+This may create problems because < is used for tags.
+So we use entities.
+
+Common HTML Entities
+Symbol	    Entity
+<	        &lt;
+>	        &gt;
+&	        &amp;
+"	        &quot;
+❤️	        &hearts;
+space	    &nbsp;
+
+Example -
+<p>5 &lt; 10</p>
+<p>Tom &amp; Jerry</p>
+<p>Made with &hearts;</p>
+
+Output -
+5 < 10
+Tom & Jerry
+Made with ♥
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities</title>
+</head>
+<body>
+    <h1>a &lt; b</h1>
+    <h1>My &nbsp; Websites</h1>
+    <h1>&copy; 2026 My Website</h1>
+    <h1>Price: &#8377;500</h1>
+    <h1>Temperature: 30&deg;C</h1>
+    <h1>Made with &hearts;</h1>
+    <h1>&quot;Hello World&quot;</h1>
+    <h1>a &gt; b</h1>
+    <h1>This is a &bigstar;</h1>
+    <h1>This is a &#9733;</h1>
+</body>
+</html>
