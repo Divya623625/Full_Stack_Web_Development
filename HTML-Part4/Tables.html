@@ -1,0 +1,98 @@
+<!-- 
+HTML tables are used to display data in rows and columns.
+
+Basic Table Structure -
+<table border = "1">
+        <caption>Table Caption</caption>
+        <tr>
+            <th>header 1</th>
+            <th>header 2</th>
+        </tr>
+        <tr>
+            <td>data 1</td>
+            <td>data 2</td>
+        </tr>
+</table>
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>25</td>
+        <td>New York</td>
+    </tr>
+    <tr>
+        <td>Emma</td>
+        <td>22</td>
+        <td>London</td>
+    </tr>
+</table>
+
+Output
+Name	Age	City
+John	25	New York
+Emma	22	London
+
+Important Tags
+Tag	    Description
+<table>	Defines a table
+<tr>	Defines a table row
+<th>	Defines a header cell
+<td>	Defines a data cell
+<caption>	Adds a table title
+<thead>	Groups header content
+<tbody>	Groups body content
+<tfoot>	Groups footer content
+
+Example with colspan and rowspan
+<table border="1">
+    <tr>
+        <th colspan="2">Student Details</th>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>Alex</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Marks</td>
+        <td>Math: 90</td>
+    </tr>
+    <tr>
+        <td>Science: 85</td>
+    </tr>
+</table>
+This creates a clean, professional-looking table with borders and spacing. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables In HTML</title>
+</head>
+<body>
+   <table border = "3">
+        <caption>Food Menu</caption>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Frooti</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Samosa</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Chips</td>
+            <td>20</td>
+        </tr>
+   </table>
+</body>
+</html>
