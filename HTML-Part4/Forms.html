@@ -1,0 +1,81 @@
+<!-- HTML Forms
+An HTML form is used to collect user input and send it to a server for processing.
+
+Basic Syntax
+<form action="/submit" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <input type="submit" value="Submit">
+</form>
+
+Important Attributes of <form>
+Attribute	        Description
+action	        URL where form data is sent
+method	        HTTP method (GET or POST)
+target	        Specifies where to display the response
+autocomplete	Enables/disables autocomplete
+enctype	        Specifies how form data is encoded
+
+Common Form Elements
+1. Text Input
+<input type="text" name="username">
+2. Password Input
+<input type="password" name="password">
+3. Email Input
+<input type="email" name="email">
+4. Radio Buttons
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+5. Checkboxes
+<input type="checkbox" name="hobby" value="reading"> Reading
+<input type="checkbox" name="hobby" value="sports"> Sports
+6. Dropdown List
+<select name="country">
+    <option value="india">India</option>
+    <option value="usa">USA</option>
+</select>
+7. Text Area
+<textarea name="message" rows="4" cols="30"></textarea>
+8. Submit Button
+<input type="submit" value="Send">
+9. Reset Button
+<input type="reset" value="Clear">
+
+Complete Example
+<form action="/register" method="post">
+    <label>Name:</label>
+    <input type="text" name="name" required><br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" required><br><br>
+
+    <label>Password:</label>
+    <input type="password" name="password" required><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <br><br>
+
+    <label>Country:</label>
+    <select name="country">
+        <option>India</option>
+        <option>USA</option>
+        <option>UK</option>
+    </select>
+    <br><br>
+
+    <input type="submit" value="Register">
+</form>
+
+GET vs POST
+GET	                    POST
+Data appears in URL	    Data sent in request body
+Less secure     	    More secure
+Limited data size	    Large data can be sent
+Used for fetching data	Used for submitting data
+
+Forms are one of the most important HTML elements for creating 
+login pages, registration forms, surveys, feedback forms, and 
+search boxes. 
+-->
