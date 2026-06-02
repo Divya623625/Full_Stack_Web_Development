@@ -1,0 +1,90 @@
+<!-- Placeholder
+placeholder shows a small hint inside the input box.
+Example -
+<input type="text" placeholder="Enter your name">
+It disappears when the user starts typing.
+
+Label
+label gives the name/title for the input field.
+Example -
+<label>Name:</label>
+<input type="text">
+
+Output -
+Name: [________]
+
+Difference
+Label	            Placeholder
+Outside the box	    Inside the box
+Always visible	    Disappears while typing
+Describes field	    Gives hint/example 
+
+Think of label as the name sticker for the input box.
+Example -
+<label>Name</label>
+<input type="text">
+
+Output -
+Name  [________]
+
+Here -
+label → tells the user what to enter
+input → place to type
+
+Without label -
+<input type="text">
+User will not know:
+
+Name?
+Email?
+Password?
+
+So label gives meaning to the box.
+
+Classical way of using label
+<label for="name">Name:</label>
+<input type="text" id="name">
+
+How it works
+for="name" in <label>
+id="name" in <input>
+
+Both names must be the same.
+This connects the label with the input box.
+If you click on Name, the cursor automatically goes into the textbox.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form action = "/action">
+        <label>
+            Username: 
+            <input type="text" placeholder="Enter username"/>
+        </label>
+        <br>
+        <label>
+            Password: 
+            <input type="password" placeholder="Enter password"/>
+        </label>
+        <br>
+        <div>
+            <label for="num">Age: </label>
+            <input type="number" placeholder="Enter your Age" id="num">
+        </div>
+        <div>
+            <label for="col">Color: </label>
+            <input type="color" placeholder="Enter color" id="col">
+        </div>
+        <div>
+            <label for="time">Time: </label>
+            <input type="time" placeholder="Enter time" id="time">
+        </div>
+    </form>
+</body>
+</html>
+
