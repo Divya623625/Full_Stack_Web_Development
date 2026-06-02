@@ -1,0 +1,51 @@
+<!-- 
+The <textarea> element in HTML is used to create a multi-line text input field.
+
+Basic Syntax -
+<textarea rows="4" cols="50">
+Enter text here...
+</textarea>
+
+Example
+<!DOCTYPE html>
+<html>
+<body>
+    <form>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" cols="40"></textarea>
+    </form>
+</body>
+</html>
+
+Common Attributes
+Attribute	        Description
+rows	        Number of visible text lines
+cols	        Visible width in characters
+placeholder    	Hint text inside the box
+maxlength	    Maximum number of characters
+readonly	    Makes the textarea non-editable
+disabled	    Disables the textarea
+name	        Name used when submitting forms
+
+Example with Placeholder
+<textarea placeholder="Write your comment here..."></textarea>
+Example with CSS
+<textarea style="width:300px; height:150px;"></textarea>
+Output
+A large editable text box where users can type multiple lines of text.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextArea in HTML</title>
+</head>
+<body>
+    <form>
+        <label for="feedback">Please give your valuable feedback : </label>
+        <textarea id="feedback" name="feedback" rows="5" cols="30" placeholder="Write your feedback here"></textarea>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
