@@ -1,0 +1,68 @@
+<!-- 
+Buttons in HTML
+Buttons are used to perform actions like submit, reset, click, etc.
+
+1. Simple Button
+<button>Click Me</button>
+
+2. Submit Button
+Used inside forms to send data.
+<button type="submit">Submit</button>
+
+3. Reset Button
+Clears form data.
+<button type="reset">Reset</button>
+
+4. Normal Button
+Used for JavaScript actions.
+
+<button type="button">Login</button>
+Another Method Using input
+<input type="submit" value="Submit">
+<input type="reset" value="Clear">
+<button type="button">Click</button>
+
+Difference
+Tag	            Purpose
+<button>	    Creates clickable button
+type="submit"	Sends form data
+type="reset"	Clears form
+type="button"	Normal custom button 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+<body>
+    <button>hello</button>
+    <button type="submit">hello</button>
+    <form action="/server">
+        <div>
+            <label for="num">Age: </label>
+            <input type="number" placeholder="Enter your Age" id="num">
+        </div>
+        <div>
+            <label for="col">Color: </label>
+            <input type="color" placeholder="Enter color" id="col">
+        </div>
+        <div>
+            <label for="time">Time: </label>
+            <input type="time" placeholder="Enter time" id="time">
+        </div>
+        <button>Submit</button>
+        <br>
+        <button type="submit">Submit 1</button>
+        <br>
+        <button type="reset">Reset</button>
+        <br>
+        <button type="button">Button</button>
+        <br>
+        <input type="button" value="click me">
+        <br>
+        <input type="submit" value="click me button2">
+    </form>
+</body>
+</html>
