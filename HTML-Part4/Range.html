@@ -1,0 +1,28 @@
+<!-- 
+Range in HTML is used to create a slider.
+Example-
+<input type="range" min="0" max="100" name="volume">
+Here-
+type="range" → creates slider
+min → minimum value
+max → maximum value
+name → field name
+If slider is at 70, form sends:
+volume=70 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range in HTML</title>
+</head>
+<body>
+    <form action="/server">
+        <div>
+            <label for="vol">Select your volume level : </label>
+            <input type="range" id="vol" min="0" max="100" name="vol" step="10">
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>
