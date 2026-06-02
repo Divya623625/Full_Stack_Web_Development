@@ -1,0 +1,93 @@
+<!-- colspan and rowspan are HTML table attributes used to merge cells.
+
+1. colspan
+Makes a cell span across multiple columns.
+<table border="1">
+  <tr>
+    <th colspan="2">Student Info</th>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>Age</td>
+  </tr>
+</table>
+
+Here, "Student Info" stretches across 2 columns.
+
+2. rowspan
+Makes a cell span across multiple rows.
+<table border="1">
+  <tr>
+    <th rowspan="2">Name</th>
+    <td>John</td>
+  </tr>
+  <tr>
+    <td>Mike</td>
+  </tr>
+</table>
+
+Here, "Name" stretches across 2 rows.
+
+Combined Example
+<table border="1">
+  <tr>
+    <th rowspan="2">ID</th>
+    <th colspan="2">Marks</th>
+  </tr>
+  <tr>
+    <th>Math</th>
+    <th>Science</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>80</td>
+    <td>90</td>
+  </tr>
+</table>
+
+This creates:
+
+rowspan="2" → ID covers 2 rows
+colspan="2" → Marks covers 2 columns -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colspan And Rowspan</title>
+</head>
+<body>
+    <table border="2">
+        <caption>Food Menu</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Item</th>
+                <th colspan="2">Price</th>
+            </tr>
+            <tr>
+                <th>INR</th>
+                <th>USD</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Frooti</td>
+                <td>10</td>
+                <td>0.14</td>
+            </tr>
+
+             <tr>
+                <td>Samosa</td>
+                <td>12</td>
+                <td>0.17</td>
+            </tr>
+
+             <tr>
+                <td>Chips</td>
+                <td>20</td>
+                <td>0.28</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
