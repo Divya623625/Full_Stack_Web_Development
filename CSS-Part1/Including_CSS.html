@@ -1,0 +1,71 @@
+<!-- 
+Including CSS in HTML
+There are 3 ways to add CSS to an HTML page:
+1. Inline CSS
+CSS is written directly inside an HTML tag using the style attribute.
+<p style="color: blue;">Hello World</p>
+style is the attribute used to add CSS.
+color: blue; makes the text blue.
+
+2. Internal CSS
+CSS is written inside the <style> tag in the <head> section.
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello World</p>
+</body>
+</html>
+<style> contains CSS code.
+p means all paragraph tags.
+All <p> elements become blue.
+
+3. External CSS
+CSS is written in a separate .css file and linked to the HTML file.
+HTML file:
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+style.css file:
+p {
+    color: blue;
+}
+<link> connects the HTML file to the CSS file.
+href="style.css" tells the browser where the CSS file is located.
+This method is best for large websites because one CSS file can style many HTML pages.
+Short Note
+Inline CSS → Inside an HTML tag.
+Internal CSS → Inside the <style> tag.
+External CSS → In a separate .css file linked using <link>. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Chapter 1</title>
+    <style>
+        h1{
+            color: purple;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline CSS -->
+    <h1 style="color: red;">Cascading Style Sheet</h1>
+    <h1 style="color: red;">Cascading Style Sheet</h1>
+    <p style="color:cadetblue;"><b>This is a paragraph</b></p>
+    <button style="color:brown; background-color: chartreuse;">Help</button>
+    <!-- Internal CSS -->
+    <h1>Divya P</h1>
+    <h1>Hello World!!!</h1>
+    <h1>Bachelor Of Computer Applications</h1>
+</body>
+</html>
