@@ -1,0 +1,55 @@
+<!-- Combinators in CSS are used to select elements based on their relationship with other elements.
+1. Descendant Selector (space)
+Selects all matching elements inside another element.
+div p {
+    color: red;
+}
+
+Example:
+<div>
+    <p>Hello</p>
+</div>
+
+The <p> becomes red.
+
+2. Child Selector (>)
+Selects only direct children.
+div > p {
+    color: blue;
+}
+
+Example:
+<div>
+    <p>Hello</p>
+</div>
+The direct <p> inside <div> becomes blue.
+
+3. Adjacent Sibling Selector (+)
+Selects the next immediate sibling.
+h1 + p {
+    color: green;
+}
+
+Example:
+<h1>Title</h1>
+<p>Paragraph</p>
+Only the first <p> after <h1> becomes green.
+
+4. General Sibling Selector (~)
+Selects all siblings after an element.
+h1 ~ p {
+    color: brown;
+}
+
+Example:
+<h1>Title</h1>
+<p>Para 1</p>
+<p>Para 2</p>
+Both paragraphs become brown.
+
+Short Trick
+(space) = Inside
+> = Direct child
++ = Next sibling
+~ = All following siblings 
+-->
