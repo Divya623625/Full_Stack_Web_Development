@@ -1,0 +1,53 @@
+<!-- 
+Specificity means the priority of CSS selectors. When multiple CSS rules 
+apply to the same element, the selector with higher specificity wins.
+
+Example
+<p id="para" class="text">Hello</p>
+p {
+  color: blue;
+}
+
+.text {
+  color: green;
+}
+
+#para {
+  color: red;
+}
+
+Output- Red text
+Because #para (ID selector) has higher specificity than .text (class selector) and p (element selector).
+
+Specificity Order
+Inline style → Highest
+ID selector (#id)
+Class, attribute, pseudo-class (.class, :hover)
+Element, pseudo-element (p, h1, ::before)
+
+Easy trick:
+Inline > ID > Class > Element.
+
+Yes, these are the basic CSS specificity rules:
+
+ID > Class > Element
+#id     /* Highest */
+.class
+p       /* Lowest */
+More selectors > Fewer selectors
+div p          /* More specific */
+p              /* Less specific */
+If specificity is the same → Cascading
+p {
+  color: blue;
+}
+
+p {
+  color: red;
+}
+
+Output: Red (because the second rule comes later).
+
+Easy Formula -
+ID > Class > Element → If tied, the last rule wins.
+-->
