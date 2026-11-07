@@ -1,0 +1,54 @@
+<!-- Pseudo-elements are used to style a specific part of an element.
+
+Syntax
+selector::pseudo-element {
+    property: value;
+}
+Common Pseudo-elements
+1. ::first-letter
+
+Styles the first letter.
+
+p::first-letter {
+    color: red;
+    font-size: 30px;
+}
+2. ::first-line
+
+Styles the first line.
+
+p::first-line {
+    color: blue;
+}
+3. ::selection
+
+Styles selected text.
+
+::selection {
+    background-color: yellow;
+}
+4. ::before
+
+Adds content before an element.
+
+h1::before {
+    content: "★ ";
+}
+5. ::after
+
+Adds content after an element.
+
+h1::after {
+    content: " ★";
+}
+Example
+p::first-letter {
+    color: red;
+}
+<p>Hello World</p>
+
+Output: The H in "Hello" becomes red.
+
+Simple Difference
+Pseudo-class (:) → Styles an element's state (:hover, :focus)
+Pseudo-element (::) → Styles a part of an element (::first-letter, ::before) -->
