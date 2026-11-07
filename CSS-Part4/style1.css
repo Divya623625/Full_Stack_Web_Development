@@ -1,0 +1,15 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(0,255,0);
+    transition: margin-top 2s ease-in-out 0.2s; /* This property is used to make the transition smooth */
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+div:hover{
+    background-color: rgba(0,0,255);
+    border-radius: 50%;
+    margin-top: 100px;
+}
+
