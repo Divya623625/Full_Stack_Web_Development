@@ -1,0 +1,72 @@
+Block & Inline Elements – Conclusions
+
+There are two types of HTML elements:
+1. Block-level elements
+2. Inline elements
+
+1. Block-level elements
+Examples: <div>, <p>, <h1>, <section>
+
+Point 1: Always start on a new line
+This means every block element starts on a separate line.
+<div>Hello</div>
+<div>Welcome</div>
+Output:
+Hello
+Welcome
+
+Point 2: Take up as much horizontal space as possible
+A block element occupies the entire available width of its parent container by default.
+
+For example, even if the text is small, the block occupies the available width.
+Hello
+
+
+Point 3: Respects width and height CSS properties
+We can manually change the width and height of block elements.
+div {
+  width: 200px;
+  height: 100px;
+}
+
+This makes the div 200 pixels wide and 100 pixels tall.
+
+Point 4: Horizontal and vertical margins both work
+Margin means the space outside an element.
+- Horizontal margin → Left and right spacing.
+- Vertical margin → Top and bottom spacing.
+Both work for block elements.
+
+2. Inline elements
+Examples: <span>, <a>, <strong>, <em>
+
+Point 1: Do not start on a new line
+Inline elements stay in the same line as the surrounding content.
+<span>Hello</span>
+<span>Welcome</span>
+
+Output:
+Hello Welcome
+
+Point 2: Use only as much horizontal space as required by the content
+Inline elements occupy only the space needed for their content.
+Hello Welcome
+
+Each word takes only the space it needs.
+Important: Normal inline elements do not accept width and height CSS properties.
+
+For example:
+span {
+  width: 200px;
+  height: 100px;
+}
+These properties won't change the size of a normal inline span.
+
+Point 3: Margins work horizontally, but not vertically
+- Left and right margins work.
+- Top and bottom margins do not affect the normal layout of surrounding elements.
+
+Point 4: Padding works on all sides, but top and bottom may overlap
+Padding means the space inside an element.
+Inline elements accept padding on all four sides.
+However, top and bottom padding may overlap other elements because they don't increase the normal line layout height.
