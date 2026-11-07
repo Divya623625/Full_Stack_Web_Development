@@ -1,0 +1,24 @@
+div {
+    background-color: lightblue;
+}
+
+p{
+    background-color: lightgreen;
+}
+
+form {
+    background-color: red;
+}
+
+input {
+    background-color: inherit;
+}
+
+button {
+    background-color: inherit;
+}
+
+button:hover {
+    background-color: lightpink;
+}
+
