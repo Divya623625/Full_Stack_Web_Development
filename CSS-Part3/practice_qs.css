@@ -1,0 +1,65 @@
+/* 
+Q1. Create a box using div. Set:
+- Height to 150px and width to 300px.
+- Background color to grey.
+- Border to 5px, black, dotted.
+- Top margin of 20px.
+- Right margin of 1em.
+- Bottom margin of 40px.
+- Left margin of 2em.
+- Padding on all sides of 1em.
+ */
+#box{
+    height: 150px;
+    width: 200px;
+    background-color: grey;
+    border: 5px dotted black;
+    margin: 20px 1em 40px 2em;
+    padding: 1em;
+}
+/* 
+Q2. Create 3 divs with the following properties:
+- Height and width of 100px.
+- Background color to pink.
+- Border to 2px solid black.
+- Make each div a circle.
+- Place all 3 divs in a single line.
+ */
+ .box{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+ }
+ /* 
+ Q3. Create a list of technologies:
+- HTML
+- CSS
+- JavaScript
+- NodeJS
+- ReactJS
+- SQL
+- MongoDB
+- Java
+- C++
+- C
+- Python
+Now change the display of all list items to inline to move them all into a single line.
+Did you notice something different? Try to find why the bullet points disappear. 
+*/
+li {
+    display: inline;
+}
+/* Why do bullet points disappear? 
+Normally, <li> elements have display: list-item.
+This automatically displays bullet points.
+When you change:
+li {
+    display: inline;
+}
+The list items appear in a single line, and the bullet points disappear.
+Why?
+Because display: inline changes the list items into inline elements instead of list items. The browser no longer displays their default list markers.
+*/
