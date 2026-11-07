@@ -1,0 +1,10 @@
+h2{
+    display: inline;
+    background-color: black;
+    color: white;
+}
+span{
+    display: block;
+    background-color: red;
+    color: black;
+}
