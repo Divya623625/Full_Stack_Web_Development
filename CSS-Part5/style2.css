@@ -1,0 +1,20 @@
+.container {
+            height: 50px;
+            width: 900px;
+            background-color: pink;
+            border: 2px solid #4db6ac;
+            border-radius: 10px;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .child {
+            height: 50px;
+            width: 80px;
+
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
